@@ -2,7 +2,7 @@ var body = $response.body;
 var url = $request.url;
 
 const path1 = '/api/v1/sell/user/privilege';
-const path2 = 'www.gmugmu.com/api/account/getUser?';
+const path2 = 'www.gmugmu.com/api/account/getUser';
 let obj = JSON.parse(body);
 
 if (url.indexOf(path1) != -1) {
