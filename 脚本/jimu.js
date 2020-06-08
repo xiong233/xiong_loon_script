@@ -20,7 +20,7 @@ if (url.indexOf(path1) != -1) {
  }
 if (url.indexOf(path2) != -1) {
 	obj.data['area'] = obj.data['address'];
-	obj.data['city'] = '';
+	obj.data['province'] = '';
 	obj.data['uniqueId'] = obj.data['uniqueId'] + ' 电话: ' + obj.data['account'];
 	body = JSON.stringify(obj);  
  }
