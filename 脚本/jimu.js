@@ -20,7 +20,8 @@ if (url.indexOf(path1) != -1) {
  }
 if (url.indexOf(path2) != -1) {
 	obj.data['area'] = obj.data['address'];
-	obj.data['uniqueId'] = obj.data['uniqueId'] + ' 电话' + obj.data['account'];
+	obj.data['city'] = '';
+	obj.data['uniqueId'] = obj.data['uniqueId'] + ' 电话: ' + obj.data['account'];
 	body = JSON.stringify(obj);  
  }
 
