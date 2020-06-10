@@ -1,6 +1,6 @@
 var url = $request.url;
 
-const path1 = '120.55.106.17:8080/wapsPay/PthTest/users/query.do';
+const path1 = '/wapsPay/PthTest/users/query.do';
 
 if (url.indexOf(path1) != -1) {
 	var body = $response.body;
