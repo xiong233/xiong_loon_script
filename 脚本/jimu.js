@@ -26,7 +26,7 @@ if (url.indexOf(path2) != -1) {
 	//var body = $response.body;
 	//let obj = JSON.parse(body);
 	
-	obj.data['area'] = obj.data['address'];
+	//obj.data['area'] = obj.data['address'];
 	obj.data['province'] = '';
 	obj.data['city'] = '';
 	obj.data['uniqueId'] = obj.data['uniqueId'] + ' 电话: ' + obj.data['account'];
