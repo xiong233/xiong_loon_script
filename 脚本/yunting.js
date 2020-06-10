@@ -1,6 +1,6 @@
 var url = $request.url;
 
-const path1 = 'getway.radio.cn/app';
+const path1 = '112.126.123.82/app';
 
 if (url.indexOf(path1) != -1) {
 	var body = $response.body;
