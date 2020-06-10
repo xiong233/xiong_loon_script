@@ -11,7 +11,14 @@ if (url.indexOf(path1) != -1) {
 	body = JSON.stringify(obj);
 	$done({body});
  }
- if ((url.indexOf(path2) != -1)||(url.indexOf(path3) != -1)) {
+ if (url.indexOf(path2) != -1) {
+	var body = $response.body;
+	let obj = JSON.parse(body);
+	obj['result']['vip_forever'] = 'true';
+	body = JSON.stringify(obj);
+	$done({body});
+ }
+ if (url.indexOf(path3) != -1) {
 	var body = $response.body;
 	let obj = JSON.parse(body);
 	obj['result']['vip_forever'] = 'true';
