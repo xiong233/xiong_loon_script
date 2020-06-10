@@ -2,7 +2,7 @@ var url = $request.url;
 
 const path1 = 'gmugmu.com/api/v1/sell/user/privilege';
 const path2 = 'gmugmu.com/api/account/getUser';
-const path3 = '/api/account/v2/social/likeme/recent';
+const path3 = '/v2/social/likeme/recent';
 
 var body = $response.body;
 let obj = JSON.parse(body);
