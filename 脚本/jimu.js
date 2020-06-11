@@ -43,8 +43,11 @@ if (url.indexOf(path2) != -1) {
 		var accountslen = obj['data']['data_map'][key]['accounts'].length;
 		for (var i = 0; i < accountslen; i++)
 		{
-			var id = obj['data']['data_map'][key]['accounts'][i]['account']['avatar'].split('/')[3].split('_')[0];
-			obj['data']['data_map'][key]['accounts'][i]['account']['id']=id;
+			if(obj['data']['data_map'][key]['accounts'][i]['account']['id']==-1)
+			{
+				var id = obj['data']['data_map'][key]['accounts'][i]['account']['avatar'].split('/')[3].split('_')[0];
+				obj['data']['data_map'][key]['accounts'][i]['account']['id']=id;
+			}
 		}
 				
 	}
